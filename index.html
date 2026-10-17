@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pixel Office — Ambiente Virtual</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="app">
+    <!-- Top HUD Bar -->
+    <header class="hud-bar">
+      <div class="hud-left">
+        <span class="status-dot"></span>
+        <span class="hud-title">PIXEL OFFICE // AMBIENTE VIRTUAL</span>
+        <span id="zone-badge" class="zone-badge">📍 Corredor Central</span>
+      </div>
+      <div class="hud-right">
+        <button id="btn-char-select" class="hud-btn char-select-btn" title="Escolher Boneco (Tecla P ou 1-6)">
+          👤 Boneco: <span id="current-char-name">Lucas</span>
+        </button>
+        <button id="btn-grid" class="hud-btn" title="Mostrar/Ocultar Grade (G)"># Grade</button>
+        <button id="btn-collision" class="hud-btn" title="Mostrar/Ocultar Colisões (C)">⬛ Colisões</button>
+        <button id="btn-labels" class="hud-btn active" title="Mostrar/Ocultar Rótulos das Áreas (L)">🏷️ Áreas</button>
+        <div class="zoom-controls">
+          <button id="btn-zoom-out" class="hud-btn" title="Diminuir Zoom (-)">−</button>
+          <span id="zoom-level">3x</span>
+          <button id="btn-zoom-in" class="hud-btn" title="Aumentar Zoom (+)">+</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Viewport -->
+    <main class="viewport">
+      <canvas id="office-canvas"></canvas>
+
+      <!-- Character Selection Modal (3 Women & 3 Men) -->
+      <div id="char-modal" class="char-modal">
+        <div class="char-modal-card">
+          <div class="char-modal-header">
+            <div>
+              <h2>👥 ESCOLHA SEU BONECO</h2>
+              <p class="char-modal-subtitle">Clique em um personagem ou pressione as teclas <kbd>1</kbd> a <kbd>6</kbd></p>
+            </div>
+            <button id="char-modal-close" class="dialog-close" title="Fechar (Esc ou P)">✕</button>
+          </div>
+
+          <div class="char-group-label">👩 MULHERES</div>
+          <div id="char-grid-women" class="char-grid"></div>
+
+          <div class="char-group-label">👨 HOMENS</div>
+          <div id="char-grid-men" class="char-grid"></div>
+        </div>
+      </div>
+
+      <!-- Floating Interaction Prompt -->
+      <div id="interaction-prompt" class="interaction-prompt hidden">
+        <span class="key-badge">E</span>
+        <span id="interaction-text">Interagir</span>
+      </div>
+
+      <!-- Toast / Object Inspection Modal -->
+      <div id="dialog-box" class="dialog-box hidden">
+        <div class="dialog-header">
+          <span id="dialog-title">Objeto</span>
+          <button id="dialog-close" class="dialog-close">✕</button>
+        </div>
+        <p id="dialog-body"></p>
+      </div>
+
+      <!-- Bottom Controls Legend -->
+      <div class="controls-panel">
+        <div class="control-item"><kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd> ou <kbd>↑</kbd><kbd>←</kbd><kbd>↓</kbd><kbd>→</kbd> Mover</div>
+        <div class="control-item"><kbd>Shift</kbd> Correr</div>
+        <div class="control-item"><kbd>E</kbd> / <kbd>Espaço</kbd> Interagir</div>
+        <div class="control-item"><kbd>P</kbd> ou <kbd>1</kbd>–<kbd>6</kbd> Trocar Boneco</div>
+        <div class="control-item"><kbd>G</kbd> Grade</div>
+        <div class="control-item"><kbd>C</kbd> Colisões</div>
+      </div>
+    </main>
+  </div>
+
+  <script src="office.js"></script>
+</body>
+</html>

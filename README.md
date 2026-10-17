@@ -8,6 +8,8 @@
 
 Um ambiente virtual simples estilo **Pixel Art Top-Down** (visto de cima, inspirado em *Gather.town* e RPGs clássicos 16-bits) construído 100% com **HTML5 Canvas, CSS3 e JavaScript puro**, sem necessidade de imagens externas ou bibliotecas.
 
+⭐ Se este projeto te ajudou a aprender algo, deixe uma estrela no repositório!
+
 <p align="center">
   <img src="pixeloffice.gif" alt="Demo do Mini Pixel Office: personagem andando pelo escritório, sentando no sofá e trocando de boneco" width="720" />
 </p>
@@ -182,8 +184,6 @@ Nos acompanhe também nas redes sociais:
 - [Nossa loja na Amazon](https://www.amazon.com.br/shop/mulherespro0b)
 
 Caso se interesse por **Inteligência Artificial**, acesse também a newsletter [Explorando a IA](https://elisaterumi.substack.com/)!
-
-⭐ Se este projeto te ajudou a aprender algo, deixe uma estrela no repositório!
 
 ---
 

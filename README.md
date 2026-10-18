@@ -8,6 +8,8 @@
 
 Um ambiente virtual simples estilo **Pixel Art Top-Down** (visto de cima, inspirado em *Gather.town* e RPGs clássicos 16-bits) construído 100% com **HTML5 Canvas, CSS3 e JavaScript puro**, sem necessidade de imagens externas ou bibliotecas.
 
+Veja a [demo aqui](https://mulheres-programando.github.io/mini-pixel-office/)!
+
 ⭐ Se este projeto te ajudou a aprender algo, deixe uma estrela no repositório!
 
 <p align="center">
